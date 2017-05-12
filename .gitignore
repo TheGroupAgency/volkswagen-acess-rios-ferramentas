@@ -1,0 +1,22 @@
+#Sublime Text
+acessorios_ferramentas.sublime-project
+acessorios_ferramentas.sublime-workspace
+
+#Docker
+#Dockerfile
+/config/
+/html/
+
+#Laravel
+/bootstrap/compiled.php
+/vendor
+composer.phar
+composer.lock
+.env.*.php
+.env.php
+.DS_Store
+Thumbs.db
+/app/storage/sheets
+/app/storage/data_upload
+/app/storage/temp
+/public/upload
