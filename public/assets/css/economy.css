@@ -1,0 +1,15 @@
+.form-group {
+	width: 50%;
+}
+.result, .pieceClone, .notFound {
+	display: none;
+}
+.carName {
+	font-weight: bold;
+}
+.pieceItem {
+	padding: 12px 0;
+}
+	.pieceItem p {
+		line-height: 10px;
+	}

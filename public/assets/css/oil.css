@@ -1,0 +1,36 @@
+.castrol-logo {
+	float: left;
+	padding-right: 20px;
+}
+
+.separator {
+	width: 100%;
+	height: 1px;
+	background: #cfd7d9;
+}
+.table-header {
+	font-weight: bold;
+	border-bottom: 1px solid #00b1eb;
+}
+.table-piece {
+	border-bottom: 1px solid #8994a0;
+	background-color: #eaeeed;
+}
+.form-group {
+	width: 50%;
+}
+.table-result {
+	padding: 20px 0;
+}
+.pieceClone, .result {
+	display: none;
+}
+.pieceItem {
+	margin-bottom: 20px;
+}
+	.pieceItem p.observation {
+		margin-top: 10px;
+	}
+	.pieceItem p {
+		margin-bottom: 0px;
+	}

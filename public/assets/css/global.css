@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'vw_headline_otblack';
+  src: url("../fonts/vwheadlineot-black-webfont.eot");
+  src: url("../fonts/vwheadlineot-black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/vwheadlineot-black-webfont.woff") format("woff"), url("../fonts/vwheadlineot-black-webfont.ttf") format("truetype"), url("../fonts/vwheadlineot-black-webfont.svg#vw_headline_otblack") format("svg");
+  font-weight: normal;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 'vw_headline_otbook';
+  src: url("../fonts/vwheadlineot-book-webfont.eot");
+  src: url("../fonts/vwheadlineot-book-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/vwheadlineot-book-webfont.woff") format("woff"), url("../fonts/vwheadlineot-book-webfont.ttf") format("truetype"), url("../fonts/vwheadlineot-book-webfont.svg#vw_headline_otbook") format("svg");
+  font-weight: normal;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 'vw_headline_otsemibold';
+  src: url("../fonts/vwheadlineot-semibold-webfont.eot");
+  src: url("../fonts/vwheadlineot-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/vwheadlineot-semibold-webfont.woff") format("woff"), url("../fonts/vwheadlineot-semibold-webfont.ttf") format("truetype"), url("../fonts/vwheadlineot-semibold-webfont.svg#vw_headline_otsemibold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+}
+
+h1 {
+  font-family: 'vw_headline_otblack';
+  font-size: 24px;
+  color: #000000;
+}
+h2 {
+  font-size: 14px;
+  font-weight: bold;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  padding-bottom: 30px;
+}

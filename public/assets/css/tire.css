@@ -1,0 +1,40 @@
+.form-group {
+	width: 50%;
+}
+.btn-search, .item-clone, .result {
+	display: none;
+}
+#piece-list {
+	padding-top: 30px;
+}
+#piece-list .row.item > div:not(.item-clone) {
+	height: 100px;
+}
+#piece-list .row.item .text {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-weight: bold;
+}
+
+.table-header {
+	font-weight: bold;
+	border-bottom: 1px solid #00b1eb;
+}
+.table-piece {
+	border-bottom: 1px solid #8994a0;
+	background-color: #eaeeed;
+}
+
+.img-tire {
+	width: auto;
+	height: 100px;
+	padding-bottom: 10px;
+}
+
+.item-tire {
+	padding-bottom: 20px;
+}
+.item-tire p {
+	line-height: 10px;
+}
