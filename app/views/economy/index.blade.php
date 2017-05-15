@@ -57,7 +57,7 @@
 				<p><strong>Consulte disponibilidade</strong></p>
 				<p>
 					<a class="btn btn-primary btn-search" target="_blank" href="http://app.volkswagen.com.br/dcc/pt/dealers.html"> Encontre uma concessionária</a>
-						<a class="btn btn-primary btn-default" id="sendEconomy"> Agendar serviço</a>
+						<a class="btn btn-info" id="sendEconomy"> Agendar serviço</a>
 				</p>
 			</div>
 			
