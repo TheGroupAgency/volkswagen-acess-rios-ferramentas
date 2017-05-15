@@ -171,7 +171,7 @@ class CryptController extends \BaseController {
 	$datadec = $des->decrypt($des->encrypt($dataCrypt));
 
 
-    $path_cert = file_get_contents(dirname(__FILE__).'\vwservices.cer');
+    $path_cert = file_get_contents(dirname(__FILE__).'/vwservices.cer');
     //recupera chave gerada pelo certificado público ,
 	$public_key = openssl_pkey_get_public($path_cert);
 	
