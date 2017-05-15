@@ -45,8 +45,8 @@
 				<label for="motor">Motorização</label>
 				{{ Form::select('motor', array('' => 'Selecione um veículo'), null, array('class' => 'form-control', 'id' => 'motor')) }}
 			</div>
-			<input type="text" name="oilList">
-			<input type="text" name="codeOilList">
+			<input type="hidden" name="oilList">
+			<input type="hidden" name="codeOilList">
 			
 			<div class="pieceClone pieceItem">
 				<p><strong>%PIECE_NAME%</strong></p>

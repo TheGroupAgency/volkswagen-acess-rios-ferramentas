@@ -125,8 +125,6 @@ $(document).ready(function () {
     }
 }
 */
-console.log(dataTire)
-
 		$.ajax({
 			method: "POST",
 			url: "/crypt",
@@ -141,21 +139,22 @@ console.log(dataTire)
 })
 
 var sendData = function(data){ 
-
-console.log('Enviado para VW');
-
-console.log(data)
-
 		$.ajax({
 			method: "POST",		
 			url: "https://vwcads.volkswagen.com.br/agendamento/api/seguranca/autenticar",			
 			//data: {"key":"gflM3k7lW5wHrMaxlpWhbP3w2fj\/FPDL7e0t0FJLDVL++\/hKeww1nBdykdD9bws4IzTjOfNjhdqvwffZZmE27ZnumwiqB0\/tsx9dRvOfE5BJ52psoHAmWW\/gQes2FEoqvrPx\/KgiXnCD\/SxYJs7xt1lFcajjr4GcQLJ12o0ZplyR43fG8wPdlob1nbzgn7XRL4pMa9bYX1t0sgkG\/t\/2PAMw9574\/yFgtS+e35NfRraU+dJxs6T\/HaV7tmPzwLK89dQu\/LRmgXdi36ClLhhnHwC0xu4kzMCwPvN+hUBmSm23c4NayZZDM3vx6RrLAPrSzkG9AvFAyzuidIuNSJlsrA==","content":"tz7\/mGl8Pz7ZwDWvuvqkfHELxZcHDa0JjNR8hCKeQrYGNJebrkTM\/+x9vAnzUg1Wd8GACqYzX\/Bj7MeCkjDnGKKjKyo\/DlmuCNGAWSKyYQuWJsIrDsyCUdvRNeRUBxixM1ju5xFF0VEmckldaVsTxUrvXbtGFjZIQd9cEMTfjghLxxbLgIO\/sz7Gt8PBBZUWtC1mde2PFJsiXEASjzgj72XC7NehkVDcHKKZRruZ6xIh5NV+bPA3SabT\/sq19T9FtHuuy24jhZoYhI5f2\/DC3Lxx4IcZQMgf66be3uEq2CEJqV1S0Z33Fm\/0wkwhUk6SDHzYFrqDPMffKkcxpQdLRLxCayJ4yYgkJJhnnS9nnCk="},
 			data: JSON.parse(data),
 			success: function (response) {
-				console.log(response);
-				var url = response.url + '/' + response.identificador; 
-				window.location.href = url; 
-				//sendData(response); 
+				
+				if(response.processamento){
+					var url = response.url + '/' + response.identificador; 
+					window.location.href = url; 
+					//sendData(response); 	
+				}else{
+					alert("Ocorreu uma falha ao iniciar o seu agendamento, tente novamente.")
+				}
+				
+				
 			},
 			error:function(err){ 
 
