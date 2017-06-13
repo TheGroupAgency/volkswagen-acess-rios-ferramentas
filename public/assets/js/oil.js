@@ -198,7 +198,7 @@ var sendData = function(data){
 			data: JSON.parse(data),
 			success: function (response) {
 				if(response.processamento){
-					var url = response.url + '/' + response.identificador; 
+					var url = response.url + '?id=' + response.identificador; 
 					window.location.href = url; 
 					//sendData(response); 	
 				}else{
