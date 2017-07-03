@@ -221,7 +221,7 @@ var sendData = function(data){
 			success: function (response) {
 				if(response.processamento){
 					var url = response.url + '?id=' + response.identificador; 
-					window.location.href = url; 
+					window.parent.location.href = url; 
 				}else{
 					alert("Ocorreu uma falha ao iniciar o seu agendamento, tente novamente.")
 				}
